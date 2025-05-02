@@ -19,9 +19,6 @@ Thumbs.db
 # Python cache
 *.log
 
-# Jupyter Notebook Checkpoints
-.ipynb_checkpoints
-
 # VSCode
 .vscode/
 
@@ -44,6 +41,3 @@ htmlcov/
 .mypy_cache/
 .pylint.d/
 .pyre/
-
-# Poetry lock file
-poetry.lock
