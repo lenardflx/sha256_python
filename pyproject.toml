@@ -1,6 +1,6 @@
 [project]
 name = "sha256py"
-version = "0.1.0"
+version = "0.1.1"
 description = "Pure Python SHA-256 hashing implementation"
 authors = [
     { name="Lenard Felix", email="contact@lenardfelix.de" }
