@@ -1,3 +1,10 @@
+def read_file_input(path):
+    from pathlib import Path
+    file_path = Path(path)
+    if not file_path.is_file():
+        raise FileNotFoundError(f"File not found: {file_path}")
+    return file_path.read_text(encoding="utf-8")
+
 def right_rotate(n, d):
     return ((n >> d) | (n << (32 - d))) & 0xFFFFFFFF
 
