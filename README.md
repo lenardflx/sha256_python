@@ -16,20 +16,24 @@ A pure Python implementation of the SHA-256 hashing algorithm.
 
 ---
 
+## Explanation
+
+SHA-256 is a hash function that produces a 256-bit (32-byte) hash value.
+It is widely used in various security applications and protocols, to ensure data integrity and authenticity.
+
+I've created a detailed explanation of the algorithm in the [docs](docs/sha256.md).
+
+---
+
 ## Installation
 
-### From PyPI (recommended)
+
+See the [installation guide](docs/installation.md) for full details.
+
+### Quickstart
 
 ```bash
 pip install sha256py
-```
-
-### From source
-
-```bash
-git clone https://github.com/lenardflx/sha256_python.git
-cd sha256_python
-pip install -e .
 ```
 
 ---
@@ -48,15 +52,10 @@ print(my_hash.hexdigest())
 ### As command line tool
 
 ```bash
-# Prompted input
-sha256py
-
-# Hash from cli input
 sha256py "hello world"
-
-# Save output to file
-sha256py "data" > hash.txt
 ```
+
+A full list of options can be found in the [usage guide](docs/usage.md).
 
 ---
 
@@ -65,25 +64,19 @@ sha256py "data" > hash.txt
 This project uses `pytest` for testing.
 
 ```bash
-# Install pytest
 pip install pytest
-
-# Run all tests
 pytest
 ```
+
+Tests are located in the `tests` directory.
 
 ---
 
 ## Contributing
 
-Feel free to contribute! Here is how to do it:
+I won't actively maintain this project. If you want to add features or optimize the code, feel free to do so.
 
-1. Fork the repository (https://github.com/lenardflx/sha256_python/fork)
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Make your changes 
-4. Commit your changes (`git commit -m 'Add some feature'`)
-5. Push to the branch (`git push origin feature/your-feature`)
-6. Create a new Pull Request
+A short explanation how to contribute can be found in the [contributing guide](docs/contributing.md).
 
 ---
 
